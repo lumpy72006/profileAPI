@@ -3,3 +3,10 @@ __pycache__/
 .env/
 db.*
 config.env
+
+dev.log
+*.sqlite3
+*.log
+__pypackages__/
+.vscode/
+*.pid
