@@ -13,7 +13,7 @@ loglevel = "info"
 # The number of worker processes for handling requests
 workers = 2
 # The socket to bind
-bind = "0.0.0.0:8000"
+bind = f"0.0.0.0:{os.getenv('PORT', '8000')}"
 print("Gunicorn configuration loaded.")
 print(f"Working Ports: {bind}")
 # Restart workers when code changes (development only!)
